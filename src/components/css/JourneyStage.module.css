@@ -1,0 +1,26 @@
+.journey-stage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1.25);
+    padding: 0.5rem;
+    margin: 1rem 0;
+    border-radius: 12px;
+    background-color: #4b4b4b;
+    color: white;
+  }
+
+.journey-stage img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100vh;
+}
+
+#mapId { height: 1000px; }
+
