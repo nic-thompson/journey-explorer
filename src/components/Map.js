@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
-import { MapContainer, TileLayer } from "react-leaflet";
+import { MapContainer, TileLayer, Polyline } from "react-leaflet";
 import RouteMachine from "./RouteMachine";
 
 const Map = ({ stage }) => {
+  const colour = { color: '#01579b' }
   const [currentStage, setCurrentStage] = useState([]);
 
   useEffect(() => {
@@ -21,6 +22,7 @@ const Map = ({ stage }) => {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       <RouteMachine stage={currentStage} key={JSON.stringify(currentStage)} />
+      <Polyline pathOptions={colour} positions={stage.waypoints} />
     </MapContainer>
   );
 };

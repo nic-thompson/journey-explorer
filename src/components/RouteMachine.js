@@ -10,7 +10,7 @@ const CreateRouteMachineLayer = ({ stage }) => {
   const instance = L.Routing.control({
     waypoints: waypoints,
     lineOptions: {
-      styles: [{ color: "#6FA1EC", weight: 4 }],
+      styles: [{ color: "#6FA1EC", weight: 0 }],
     },
     show: false,
     addWaypoints: false,
