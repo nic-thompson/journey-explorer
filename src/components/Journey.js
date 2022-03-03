@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+
 import css from "./css/Journey.module.css";
+
 import JourneyStage from "./JourneyStage";
 import JourneyDate from "./JourneyDate";
 
@@ -22,8 +24,6 @@ const Journey = (props) => {
         [51.5255233,-0.0908146],
         [51.5879196, -0.1413858],
       ],
-      startLatLang: [51.5255233, -0.0908146],
-      endLatLang: [51.5879196, -0.1413858],
     },
     {
       id: 2,
@@ -34,8 +34,6 @@ const Journey = (props) => {
         [51.5879196, -0.1413858],
         [51.9464502, -0.5088732],
       ],
-      startLatLang: [51.5879196, -0.1413858],
-      endLatLang: [51.9464502, -0.5088732],
     },
     {
       id: 3,
@@ -47,8 +45,6 @@ const Journey = (props) => {
         [51.9464502, -0.5088732],
         [51.9976597, -0.742875],
       ],
-      startLatLang: [51.9464502, -0.5088732],
-      endLatLang: [51.9976597, -0.742875],
     },
     {
       id: 4,
@@ -61,8 +57,6 @@ const Journey = (props) => {
         [51.9976597, -0.742875],
         [51.6315845, -0.2671085],
       ],
-      startLatLang: [51.9976597, -0.742875],
-      endLatLang: [51.6315845, -0.2671085],
     },
     {
       id: 5,
@@ -76,8 +70,6 @@ const Journey = (props) => {
         [51.6315845, -0.2671085],
         [51.5879196, -0.1413858],
       ],
-      startLatLang: [51.6315845, -0.2671085],
-      endLatLang: [51.5879196, -0.1413858],
     },
     {
       id: 6,
@@ -92,8 +84,6 @@ const Journey = (props) => {
         [51.5879196, -0.1413858],
         [51.5255233, -0.0908146],
       ],
-      startLatLang: [51.5879196, -0.1413858],
-      endLatLang: [51.5255233, -0.0908146],
     },
   ];
 
