@@ -1,7 +1,6 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import { MapContainer, TileLayer } from "react-leaflet";
 import RouteMachine from "./RouteMachine";
-import { useState, useEffect } from "react";
 
 const Map = ({ stage }) => {
   const [currentStage, setCurrentStage] = useState([]);
@@ -9,7 +8,6 @@ const Map = ({ stage }) => {
   useEffect(() => {
     setCurrentStage(stage);
   }, [stage]);
-
 
   return (
     <MapContainer
@@ -22,7 +20,7 @@ const Map = ({ stage }) => {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <RouteMachine stage={currentStage} key={JSON.stringify(currentStage)}/>
+      <RouteMachine stage={currentStage} key={JSON.stringify(currentStage)} />
     </MapContainer>
   );
 };
