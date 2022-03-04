@@ -14,6 +14,7 @@ const MapOne = () => {
     {
       id: 1,
       title: "Old Street",
+      direction: "OUTBOUND",
       time: "9:00",
       coordinates: [51.5255233, -0.0908146],
       class: "start-tooltip",
@@ -22,6 +23,7 @@ const MapOne = () => {
     {
       id: 2,
       title: "Haringey",
+      direction: "OUTBOUND",
       time: "9:30",
       coordinates: [51.5879196, -0.1413858],
       class: "waypoint-tooltip",
@@ -30,6 +32,7 @@ const MapOne = () => {
     {
       id: 3,
       title: "Service Station",
+      direction: "OUTBOUND",
       time: "10:30",
       coordinates: [51.9464502, -0.5088732],
       class: "waypoint-tooltip",
@@ -47,6 +50,7 @@ const MapOne = () => {
     {
       id: 5,
       title: "Service Station",
+      direction: "INBOUND",
       time: "17:30",
       coordinates: [51.9464502, -0.5088732],
       class: "waypoint-in-tooltip",
@@ -55,6 +59,7 @@ const MapOne = () => {
     {
       id: 6,
       title: "Haringey",
+      direction: "INBOUND",
       time: "18:00",
       coordinates: [51.5879196, -0.1413858],
       class: "waypoint-in-tooltip",
@@ -63,6 +68,7 @@ const MapOne = () => {
     {
       id: 7,
       title: "Old Street",
+      direction: "INBOUND",
       time: "19:00",
       coordinates: [51.5255233, -0.0908146],
       class: "end-tooltip",
