@@ -1,0 +1,29 @@
+.start-tooltip,
+.destination-tooltip,
+.end-tooltip,
+.waypoint-tooltip,
+.waypoint-in-tooltip
+ {
+  width: 10em;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  z-index: 10;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.end-tooltip, .waypoint-in-tooltip {
+  margin-left: 12em;
+}
+
+
