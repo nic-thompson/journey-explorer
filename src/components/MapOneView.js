@@ -8,7 +8,7 @@ import {
 } from "react-leaflet";
 
 const MapOneView = ({ places }) => {
-  const wayPoints = places.places.map((place) => {
+  const circleMarkers = places.places.map((place) => {
     return (
       <CircleMarker
         key={place.id}
@@ -17,8 +17,8 @@ const MapOneView = ({ places }) => {
         radius={35}
       >
         <Tooltip className={mapOneViewCss[`${place.class}`]} permanent>
-          {place.title} 
-          <br /> 
+          {place.title}
+          <br />
           {place.time}
           <br />
           {place.duration && `( ${place.duration} )`}
@@ -37,8 +37,8 @@ const MapOneView = ({ places }) => {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
 
-      {wayPoints.map((waypoint) => {
-        return waypoint;
+      {circleMarkers.map((circleMarker) => {
+        return circleMarker;
       })}
 
       <Polyline
