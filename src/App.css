@@ -11,11 +11,11 @@ h1 {
   background-color: #4b4b4b;
 }
 
-#mapId { height: 1000px; }
+/* #mapId { height: 100px; } */
 
 .leaflet-container {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
 }
 
 .leaflet-control-container .leaflet-routing-container-hide {
