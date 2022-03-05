@@ -1,11 +1,11 @@
 import { useState } from "react";
 
-import css from "./css/MapThree.module.css";
+import css from "./css/JourneyExplorer.module.css";
 
-import MapThreeContainer from "./MapThreeContainer";
-import MapThreeSelector from "./MapThreeSelector";
+import JourneyExplorerContainer from "./JourneyExplorerContainer";
+import JourneyExplorerSelector from "./JourneyExplorerSelector";
 
-const MapThree = () => {
+const JourneyExplorer = () => {
   const [stage, setStage] = useState(1);
   // description,lat,lon,timestamp
   // old street,51.5255233,-0.0908146,2022-02-27 09:00
@@ -101,15 +101,15 @@ const MapThree = () => {
   };
 
   return (
-    <div className={css['map-three']}>
-      <MapThreeSelector
+    <div className={css['journey-explorer']}>
+      <JourneyExplorerSelector
         onTimeChange={timeChangeHandler}
         time={currentStage.time}
         title={currentStage.title}
       />
-      <MapThreeContainer stage={currentStage} />
+      <JourneyExplorerContainer stage={currentStage} />
     </div>
   );
 };
 
-export default MapThree;
+export default JourneyExplorer;

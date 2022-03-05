@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { MapContainer, TileLayer, Polyline } from "react-leaflet";
 import RouteMachine from "./RouteMachine";
 
-const MapThreeView = ({ stage }) => {
+const JourneyExplorerView = ({ stage }) => {
   const colour = { color: '#01579b' }
   const [currentStage, setCurrentStage] = useState([]);
 
@@ -27,4 +27,4 @@ const MapThreeView = ({ stage }) => {
   );
 };
 
-export default MapThreeView;
+export default JourneyExplorerView;
