@@ -1,12 +1,12 @@
-import css from "./css/MapThreeContainer.module.css";
+import MapCard from "./MapCard";
 import MapThreeView from "./MapThreeView";
 
 const MapThreeContainer = ({ stage }) => {
 
   return (
-    <div className={css["map-three-container"]}>
+    <MapCard>
       <MapThreeView stage={stage}/>
-    </div>
+    </MapCard>
   );
 };
 

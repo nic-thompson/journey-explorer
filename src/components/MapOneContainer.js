@@ -1,12 +1,12 @@
-import css from "./css/MapOneContainer.module.css";
+import MapCard from "./MapCard";
 import MapOneView from "./MapOneView";
 
 const MapOneContainer = (places) => {
 
   return (
-    <div className={css["map-one-container"]}>
+    <MapCard>
       <MapOneView places={places}/>
-    </div>
+    </MapCard>
   );
 };
 
