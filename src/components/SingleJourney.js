@@ -1,7 +1,7 @@
-import css from "./css/MapOne.module.css";
-import MapOneContainer from "./MapOneContainer";
+import css from "./css/SingleJourney.module.css";
+import SingleJourneyContainer from "./SingleJourneyContainer";
 
-const MapOne = () => {
+const SingleJourney = () => {
   // description,lat,lon,timestamp
   // old street,51.5255233,-0.0908146,2022-02-27 09:00
   // haringey,51.5879196,-0.1413858,2022-02-27 09:30
@@ -77,11 +77,11 @@ const MapOne = () => {
   ];
 
   return (
-    <div className={css["map-one"]}>
+    <div className={css["single-journey"]}>
       <h3>Old Street to Bletchley Park to Old Street</h3>
-      <MapOneContainer places={places} />
+      <SingleJourneyContainer places={places} />
     </div>
   );
 };
 
-export default MapOne;
+export default SingleJourney;

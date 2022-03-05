@@ -1,4 +1,4 @@
-import mapOneViewCss from "./css/MapOneView.module.css";
+import singleJourneyViewCss from "./css/SingleJourneyView.module.css";
 import {
   Tooltip,
   CircleMarker,
@@ -7,7 +7,7 @@ import {
   Polyline,
 } from "react-leaflet";
 
-const MapOneView = ({ places }) => {
+const SingleJourneyView = ({ places }) => {
   const circleMarkers = places.places.map((place) => {
     return (
       <CircleMarker
@@ -16,7 +16,7 @@ const MapOneView = ({ places }) => {
         pathOptions={place.pathOptions}
         radius={35}
       >
-        <Tooltip className={mapOneViewCss[`${place.class}`]} permanent>
+        <Tooltip className={singleJourneyViewCss[`${place.class}`]} permanent>
           {place.title}
           <br />
           {place.time}
@@ -49,4 +49,4 @@ const MapOneView = ({ places }) => {
   );
 };
 
-export default MapOneView;
+export default SingleJourneyView;
