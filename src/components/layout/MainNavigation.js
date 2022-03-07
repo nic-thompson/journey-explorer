@@ -28,6 +28,11 @@ const MainNavigation = (props) => {
               Journey Explorer
             </NavLink>
           </li>
+          <li>
+            <NavLink to="/file-upload" activeClassName={css.active}>
+              File Upload
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </header>
