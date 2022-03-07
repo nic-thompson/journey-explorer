@@ -2,8 +2,7 @@
 .destination-tooltip,
 .end-tooltip,
 .waypoint-tooltip,
-.waypoint-in-tooltip
- {
+.waypoint-in-tooltip {
   width: 10em;
   position: absolute;
   top: -10px;
@@ -22,8 +21,7 @@
   text-overflow: ellipsis;
 }
 
-.end-tooltip, .waypoint-in-tooltip {
+.end-tooltip,
+.waypoint-in-tooltip {
   margin-left: 12em;
 }
-
-
