@@ -1,4 +1,3 @@
-import { PinDropSharp } from "@mui/icons-material";
 import { Fragment } from "react";
 import css from "./css/Layout.module.css";
 import MainNavigation from "./MainNavigation";
