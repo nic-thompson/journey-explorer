@@ -22,7 +22,6 @@ const FileUpload = () => {
 
   const fileTypes = ["CSV"];
 
-  console.log(file && file[0].name);
   return (
     <div className={css['file-upload']}>
       <FileUploader
