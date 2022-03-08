@@ -6,6 +6,7 @@ import MultipleJourneys from "./components/MultipleJourneys";
 import JourneyExplorer from "./components/JourneyExplorer";
 import Layout from "./components/layout/Layout";
 import FileUpload from "./components/FileUpload";
+import MotorwayServices from "./components/MotorwayServices";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route exact path="/multiple-journeys" component={MultipleJourneys} />
         <Route exact path="/journey-explorer" component={JourneyExplorer} />
         <Route exact path="/file-upload" component={FileUpload} />
+        <Route exact path="/motorway-services" component={MotorwayServices} />
       </Switch>
     </Layout>
   );

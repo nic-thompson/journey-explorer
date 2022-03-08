@@ -33,6 +33,11 @@ const MainNavigation = (props) => {
               File Upload
             </NavLink>
           </li>
+          <li>
+            <NavLink to="/motorway-services" activeClassName={css.active}>
+              Motorway Services
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </header>
